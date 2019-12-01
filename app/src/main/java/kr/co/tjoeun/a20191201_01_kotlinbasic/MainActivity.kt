@@ -15,8 +15,15 @@ class MainActivity : AppCompatActivity() {
 //        TextVeiw (resultTxt)의 내용으로 반영.
 
         okBtn.setOnClickListener {
-            var inputString = inputEdt.text.toString()
-            resultTxt.text = inputString
+            var inputString = inputEdt.text.toString() //get => 내용물 받아오기
+            resultTxt.text = inputString //set => 내용물 설정하기.
+        }
+        okBtn.
+        okBtn.setOnLongClickListener {
+
+            resultTxt.text = "초기상태"
+//            onClick무시.,return true
+            return@setOnLongClickListener true
         }
 
     }
