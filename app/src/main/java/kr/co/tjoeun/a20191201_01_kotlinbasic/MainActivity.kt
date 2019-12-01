@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 //        TextVeiw (resultTxt)의 내용으로 반영.
 
         okBtn.setOnClickListener {
-
+            var inputString = inputEdt.text.toString()
+            resultTxt.text = inputString
         }
 
     }
