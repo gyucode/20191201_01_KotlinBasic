@@ -3,6 +3,7 @@ package kr.co.tjoeun.a20191201_01_kotlinbasic
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 
@@ -22,6 +23,26 @@ class MainActivity : AppCompatActivity() {
 
 //            확인버튼이 눌렸는지 로그
             Log.d("확인", inputString)
+
+//            if(inputString =="Hello"){
+//                Toast.makeText(this,"환영인사",Toast.LENGTH_SHORT).show()
+//            }
+//            else if (inputString =="bye"){
+//                Toast.makeText(this,"작별인사",Toast.LENGTH_SHORT).show()
+//            }
+//            else{
+//                Toast.makeText(this, "기타문장", Toast.LENGTH_SHORT).show()
+//            }
+
+            when (inputString){
+                "hello" -> {
+                    Toast.makeText(this,"환영인사",Toast.LENGTH_SHORT).show()
+                    Log.d("when연습","환영인사")
+                }
+                "bye" -> {Toast.makeText(this,"작별인사",Toast.LENGTH_SHORT).show()}
+
+            }
+
         }
 
 
